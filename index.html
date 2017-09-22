@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta Elements for Mobile -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Site Title -->
+	<title>JS Tricks | Comment Box</title>
+
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<section id="top_section">
+		<!-- Header Section -->
+		<div id="top">
+			<div class="top_icons">
+					<i class="fa fa-circle dots" aria-hidden="true"></i>
+					<i class="fa fa-circle dots" aria-hidden="true"></i>
+					<i class="fa fa-circle dots" aria-hidden="true"></i>
+					<i class="fa fa-circle dots" aria-hidden="true"></i>
+					<span class="wifi_p">Faisal</span>
+					<i class="fa fa-wifi wifi" aria-hidden="true"></i>
+					<span class="time">5:19 AM</span>
+					<span class="battery_p">82%</span>
+					<i class="fa fa-battery-three-quarters battery" aria-hidden="true"></i>
+			</div>
+			<!-- Title -->
+			<div class="title">
+				<h2>Messages</h2>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="app">
+		<!-- Text Display Section -->
+		<div id="display">
+			<div class="comments">
+				<p class="p"></p>
+			</div>
+		</div>
+
+		<!-- Bottom Section -->
+		<div id="comment_box">
+			<div class="msg_icons">
+				<i class="fa fa-camera" aria-hidden="true"></i>
+				<i class="fa fa-picture-o" aria-hidden="true"></i>
+				<i class="fa fa-smile-o" aria-hidden="true"></i>
+				<i class="fa fa-microphone" aria-hidden="true"></i>
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<i class="fa fa-commenting-o" aria-hidden="true"></i>
+			</div>
+			<!-- Input Field -->
+			<input id="msg_input" type="text" name="text" placeholder="Write a message">
+			<i class="fa fa-paper-plane send_btn" aria-hidden="true"></i>
+			<i class="fa fa-thumbs-o-up thumb" aria-hidden="true"></i>
+		</div>
+	</section>
+
+
+
+	<!-- Java Scirpt -->
+	<script src="bootstrap.min.js"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$(".send_btn").click(function(){
+
+				var msg = $("#msg_input").val();
+				$(".comments").append("<p class='p'>"+ msg +"</p>");
+
+			});
+
+		});
+
+	</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
